@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+<main>
+  <div class="generator">
+    <div class="head">
+  <p>Password Generator</p>
+
+</div>
+<div class="section generated">
+  <div class="gen" id="gen"> P4$5W0rD!</div>
+  <div class="copied" id="copied"></div>
+  <div class="copyimg">
+  <img src="assets/images/icon-copy.svg" onclick="copy()">
+  </div>
+</div>
+<div class="section form">
+  <form id="form">
+  <div class="chars-head">
+    <div>Character Length</div><div class="chars-num" id="chars-num">0</div>
+    </div>
+  <input type="range" value="0" max="20" id="chars" name="chars"><br>
+
+  <input type="checkbox" id="uppercase" name="uppercase"><label for="uppercase">Include Uppercase Letters</label><br>
+  <input type="checkbox" id="lowercase" name="lowercase"><label for="lowercase">Include Lowercase Letters</label><br>
+  <input type="checkbox" id="numbers" name="numbers"><label for="numbers">Include Numbers</label><br>
+  <input type="checkbox" id=symbols name="symbols"><label for="symbols">Include Symbols</label><br>
+
+  <div class="str-meter">
+  <div><p>Strength</p></div><div class="meter" id="meter">
+    <div class="str str-1"> </div>
+    <div class="str str-2"> </div>
+    <div class="str str-3"> </div>
+    <div class="str str-4"> </div>
+
+
+
+  </div>
+</div>
+  <button type="submit" id="Generate">Generate <img src="assets/images/icon-arrow-right.svg"></button>
+  </form>
+</div> <!-- section end -->
+  </div>
+</main>
+</body>
+</html>
